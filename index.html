@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Code Editor</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="editor-container">
+        <div class="editor">
+            <div class="editor-header">
+                <i class="fas fa-code"></i>
+                <h2>HTML</h2>
+            </div>
+            <textarea id="html-editor" placeholder="Escribe tu código HTML aquí..."></textarea>
+        </div>
+        <div class="editor">
+            <div class="editor-header">
+                <i class="fas fa-paint-brush"></i>
+                <h2>CSS</h2>
+            </div>
+            <textarea id="css-editor" placeholder="Escribe tu código CSS aquí..."></textarea>
+        </div>
+        <div class="editor">
+            <div class="editor-header">
+                <i class="fas fa-laptop-code"></i>
+                <h2>JavaScript</h2>
+            </div>
+            <textarea id="js-editor" placeholder="Escribe tu código JS aquí..."></textarea>
+        </div>
+    </div>
+
+    <div class="output-container">
+        <div class="output-header">
+            <i id="terminal-icon" class="fas fa-terminal"></i>
+            <h2>Output</h2>
+        </div>
+        <div id="output" class="output-box">
+            <iframe id="preview" sandbox="allow-scripts allow-same-origin" width="100%" height="500"></iframe>
+        </div>
+        <button id="download-btn" class="download-btn">Descargar Archivos</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
